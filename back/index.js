@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { app } from './src/index.js';
 
-const PORT = process.env.SERVER_PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
 	console.log('접속메시지. 이게 보인다면 로컬에서 접속이 성공했다는 것이 콘솔창에 뜰 것입니다.');
